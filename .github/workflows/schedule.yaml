@@ -1,19 +1,17 @@
 name: Schedule workflow
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/2 * * * *'
 
 jobs:
-  
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
-      
+
       - name: Display Message
         run: echo "Scheduled workflow after every 2 mins"
