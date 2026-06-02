@@ -6,7 +6,7 @@ on:
 jobs:
 
   shell-demo:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
 
