@@ -1,0 +1,23 @@
+name: Shell Commands Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  shell-demo:
+    run-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: List all the file
+        run: ls
+      
+      - name: Display current user
+        run: whoami
+
+      - name: Print Message
+        run: echo "Hello from GitHub Actions"
