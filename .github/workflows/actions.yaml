@@ -1,7 +1,7 @@
 name: Node.js CI/CD
 
 on:
-  pull_request:
+  workflow_dispatch:
     branches:
       - main
 
